@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { home } from './models/home.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -40,8 +41,43 @@ class ObservableAppState extends EventEmitter {
     }),
   ]
 
+  homes = [
+    new home(
+      {
+        year: 1974,
+        bedrooms: '3',
+        bathrooms: 2.5,
+        sqft: 1400,
+        price: 375000,
+        description: `newly renovated`,
+        imgUrl: 'https://media.istockphoto.com/id/149060607/photo/for-rent-sign-in-front-of-new-house.jpg?s=2048x2048&w=is&k=20&c=qjVeSYYLL0vajWuU1F1XiJZYoAOWgj4OVSYexpWlhu4=',
+        banana: 'sandwich'
+      }),
+
+    new home(
+      {
+        year: 1974,
+        bedrooms: '3',
+        bathrooms: 2.5,
+        sqft: 1400,
+        price: 375000,
+        description: 'newly renovated',
+        imgUrl: 'https://media.istockphoto.com/id/149060607/photo/for-rent-sign-in-front-of-new-house.jpg?s=2048x2048&w=is&k=20&c=qjVeSYYLL0vajWuU1F1XiJZYoAOWgj4OVSYexpWlhu4='
+      }),
+
+    new home(
+      {
+        year: 1974,
+        bedrooms: '3',
+        bathrooms: 2.5,
+        sqft: 1400,
+        price: 375000,
+        description: 'newly renovated',
+        imgUrl: 'https://media.istockphoto.com/id/149060607/photo/for-rent-sign-in-front-of-new-house.jpg?s=2048x2048&w=is&k=20&c=qjVeSYYLL0vajWuU1F1XiJZYoAOWgj4OVSYexpWlhu4='
+      }),
 
 
+  ]
 
 
 }

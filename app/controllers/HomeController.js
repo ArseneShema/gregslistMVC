@@ -1,12 +1,29 @@
-import { Pop } from "../utils/Pop.js"
+import { AppState } from "../AppState.js";
+import { getFormData } from "../utils/FormHandler.js";
+import { homeService } from "../services/HouseService.js";
 
-// Public
 export class HomeController {
   constructor() {
-    console.log('This is the Home Controller')
+    console.log('homes');
+    this.drawHomes()
+
   }
 
-  testButton() {
-    Pop.success('The button Works 😎')
+  drawHomes() {
+    console.log('drawing homes');
+
+    const Homes = AppState.homes
+    let homehtml = ''
+
+    Homes.forEach(home => homehtml += home.HomeCard)
+
+
+    const homelistElm = document.getElementById('homes-list')
+
+    HomelistElm.innerHTML = homehtml
+
+
   }
+
 }
+
