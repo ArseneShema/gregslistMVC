@@ -9,6 +9,12 @@ export class HomeController {
 
   }
 
+  deleteHome(HomeID) {
+    console.log('deleting', HomeID);
+    homeService.deleteHome(HomeID)
+    this.drawHomes()
+  }
+
   drawHomes() {
     console.log('drawing homes');
 
@@ -20,10 +26,11 @@ export class HomeController {
 
     const homelistElm = document.getElementById('homes-list')
 
-    HomelistElm.innerHTML = homehtml
+    homelistElm.innerHTML = homehtml
 
 
   }
+
 
 }
 

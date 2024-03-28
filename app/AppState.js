@@ -44,7 +44,7 @@ class ObservableAppState extends EventEmitter {
   homes = [
     new home(
       {
-        year: 1974,
+        year: 1874,
         bedrooms: '3',
         bathrooms: 2.5,
         sqft: 1400,
@@ -56,7 +56,7 @@ class ObservableAppState extends EventEmitter {
 
     new home(
       {
-        year: 1974,
+        year: 1774,
         bedrooms: '3',
         bathrooms: 2.5,
         sqft: 1400,
@@ -67,7 +67,7 @@ class ObservableAppState extends EventEmitter {
 
     new home(
       {
-        year: 1974,
+        year: 2000,
         bedrooms: '3',
         bathrooms: 2.5,
         sqft: 1400,
